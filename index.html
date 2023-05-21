@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BritishNFT</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-r from-cyan-200 to-blue-300">
+        <nav id="nav" class="flex items-center gap-3 lg:space-x-7 relative p-3">
+            <div class="flex items-center gap-2">
+                <img class="w-10" src="https://images.unsplash.com/photo-1557321259-82601a9ebfef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80" alt="">
+                <div class="text-2xl font-bold tracking-wider hidden lg:flex">BritishNFT</div>        
+            </div>
+            <div class="flex items-center space-x-2 bg-white px-2 py-3 rounded-lg flex-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-gray-600 w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>                  
+                <input class="outline-none w-full" type="text" placeholder="search for NFTs...">
+            </div>
+            <div class="hidden lg:flex items-center gap-5">
+                <div class="cursor-pointer tracking-wider">Products</div>
+                <div class="cursor-pointer tracking-wider">Pricing</div>
+                <div class="cursor-pointer tracking-wider">Information</div>
+                <div class="cursor-pointer tracking-wider">Trials</div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                </svg>
+            </div>
+            <div id="hamburger" class="cursor-pointer lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>                  
+            </div>
+            <div id="menu" class="lg:hidden hidden absolute top-[65px] z-50 h-screen left-0 space-y-2 p-3 w-full bg-white m-2">
+                <div class="cursor-pointer tracking-wider border-b border-gray-300 p-2">Products</div>
+                <div class="cursor-pointer tracking-wider border-b border-gray-300 p-2">Pricing</div>
+                <div class="cursor-pointer tracking-wider border-b border-gray-300 p-2">Information</div>
+                <div class="cursor-pointer tracking-wider border-b border-gray-300 p-2">Trials</div>
+            </div>
+        </nav>
+
+        <h1 class="text-center my-5 lg:my-12 font-bold text-3xl">Ready to Explore the World of NFTs?...</h1>
+
+        <div class="p-3 flex items-center justify-center gap-1 lg:gap-2">
+            <div class="relative w-1/4 rounded-lg hover:-translate-y-2 transition-translate cursor-pointer">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1543832923-44667a44c804?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=744&q=80" alt="">
+                <div class="absolute bottom-1 left-1 text-white text-sm lg:text-md font-bold tracking-wider">NFT: Tower Bridge, London</div>
+            </div>
+            <div class="relative w-1/4 rounded-lg hover:-translate-y-2 transition-translate cursor-pointer">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1519526933243-dd9747bfaae5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="">
+                <div class="absolute bottom-1 left-1 text-white text-sm lg:text-md font-bold tracking-wider">NFT: Stonehenge at Sunrise</div>
+            </div>
+            <div class="relative w-1/4 rounded-lg hover:-translate-y-2 transition-translate cursor-pointer">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1543832923-44667a44c804?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=744&q=80" alt="">
+                <div class="absolute bottom-1 left-1 text-white text-sm lg:text-md font-bold tracking-wider">NFT: Tower Bridge, London</div>
+            </div>
+            <div class="relative w-1/4 rounded-lg hover:-translate-y-2 transition-translate cursor-pointer">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1519526933243-dd9747bfaae5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="">
+                <div class="absolute bottom-1 left-1 text-white text-sm lg:text-md font-bold tracking-wider">NFT: Stonehenge at Sunrise</div>
+            </div>
+        </div>
+
+        <div class="p-3 flex items-center gap-5 my-5 lg:my-10">
+            <div class="font-bold text-xl cursor-pointer border-b border-black pb-2">Best Sellers: The Most Popular Items</div>
+            <div class="text-gray-600 text-xl cursor-pointer pb-2 border-b border-transparent">Most Affordable NFTs</div>
+        </div>
+
+        <div class="w-full p-3 flex items-center justify-center gap-3">
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: The View from The Shard, London, United Kingdom</div>
+            </div>
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1470608756445-2c9906b0680f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: Westminster, London, United Kingdom</div>
+            </div>
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1605901466543-9dae3a245e0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: Air Show, England, UK</div>
+            </div>
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1470608756445-2c9906b0680f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: Westminster, London, United Kingdom</div>
+            </div>
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: The View from The Shard, London, United Kingdom</div>
+            </div>
+        </div>
+
+        <div class="w-full p-3 flex items-center justify-center gap-3">
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1590339361030-63189cfdc8ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: Hampshire, England, UK</div>
+            </div>
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1524349009849-8867fb3e3df0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: Bamburgh Castle, Bamburgh, United Kingdom</div>
+            </div>
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1506625744989-c4ac05e0117a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: National History Museum in London</div>
+            </div>
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1524349009849-8867fb3e3df0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: Bamburgh Castle, Bamburgh, United Kingdom</div>
+            </div>
+            <div class="w-1/5 lg:h-[250px] shadow-xl cursor-pointer border border-transparent hover:border-blue-800 rounded-lg">
+                <img class="rounded-lg" src="https://images.unsplash.com/photo-1590339361030-63189cfdc8ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
+                <div class="py-2 px-1 tracking-wider">NFT: Hampshire, England, UK</div>
+            </div>
+        </div>
+
+        <footer class="h-20 bg-blue-600 flex items-center justify-end p-3">
+            <div class="text-white">BritishNFT © 2023 - All Rights Reserved.</div>
+        </footer>
+    
+    
+
+    <script>
+        const hamburger = document.getElementById('hamburger')
+        const menu = document.getElementById('menu')
+        const nav = document.getElementById('nav')
+
+        const handleClick = () => {
+            if(menu.classList.contains('hidden')){
+                menu.classList.remove('hidden')
+                nav.classList.add('bg-white')                
+            }else{
+                menu.classList.add('hidden')
+                nav.classList.remove('bg-white')
+            }
+        }
+        hamburger.addEventListener('click',handleClick)
+    </script>
+</body>
+</html>
